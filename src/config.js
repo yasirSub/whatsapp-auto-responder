@@ -9,8 +9,8 @@ module.exports = {
   // AI provider settings
   aiProvider: 'gemini',         // Options: 'gemini', 'ollama'
   aiApiKey: process.env.GEMINI_API_KEY || 'AIzaSyBTY-P2vtgVYLHDsx2cUUE5GXuczXdCEbE',
-  aiModel: 'gemini-1.5-pro',    // Updated to Gemini 1.5 Pro
-  geminiApiVersion: 'v1',       // Updated to v1 API version
+  aiModel: 'gemini-flash',      // Updated to Gemini 2.0 Flash
+  geminiApiVersion: 'v1',       // Using v1 API version
   
   // Response generation settings
   aiSystemPrompt: `You are now roleplaying as me in a WhatsApp conversation. Your responses should be casual, friendly, but also brief and to the point.
