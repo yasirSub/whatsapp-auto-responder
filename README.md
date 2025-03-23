@@ -40,7 +40,7 @@ npm install
 
 4. Configure contacts in `src/config.js`:
 ```javascript
-allowedContacts: ["911234567890"], // Phone numbers allowed to use the auto-responder
+allowedContacts: ["91xxxxxxxxxxxx90"], // Phone numbers allowed to use the auto-responder
 blockedContacts: ["*"], // Block all other contacts
 specialContacts: {  // Contacts with custom response styles
   "xxxxxxxxxxxxx0": {
