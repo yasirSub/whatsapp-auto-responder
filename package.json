@@ -1,0 +1,43 @@
+{
+  "name": "whatsapp-auto-responder",
+  "version": "1.0.0",
+  "description": "An AI-powered WhatsApp auto-response system using Google's Gemini API",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "asap": "node src/index.js --asap",
+    "cli": "node src/index.js --cli",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasirSub/whatsapp-auto-responder.git"
+  },
+  "keywords": [
+    "whatsapp",
+    "auto-responder",
+    "ai",
+    "gemini",
+    "ollama",
+    "chatbot"
+  ],
+  "author": "yasirSub",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yasirSub/whatsapp-auto-responder/issues"
+  },
+  "homepage": "https://github.com/yasirSub/whatsapp-auto-responder#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.2.1",
+    "axios": "^1.6.7",
+    "chalk": "^4.1.2",
+    "dotenv": "^16.3.1",
+    "node-fetch": "^2.7.0",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.23.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}

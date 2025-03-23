@@ -1,0 +1,17 @@
+// Configuration for WhatsApp Auto Responder
+
+module.exports = {
+  enableAutoResponses: true,
+  cooldownPeriodMinutes: 0,
+  enableGroupResponses: true,
+  aiSystemPrompt: `You are responding on behalf of the owner of this WhatsApp account.
+                   Be helpful, natural, and concise.
+                   Keep responses very brief - preferably 1-2 sentences maximum.
+                   Respond as if you're the actual person, not an AI.`,
+  aiMaxTokens: 80,
+  aiTemperature: 0.3,
+  aiApiKey: 'YOUR_GEMINI_API_KEY_HERE',
+  aiModel: 'gemini-2.0-flash',
+  blockedContacts: [],
+  allowedContacts: [],
+}; 
