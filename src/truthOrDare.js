@@ -299,9 +299,13 @@ function getReactionToExtremeDare(answer) {
  * Check if the message is a trigger to start the game
  */
 function isTriggerMessage(message) {
-  return config.truthOrDareModes.triggers.some(trigger => 
-    message.includes(trigger.toLowerCase())
-  );
+  // Check if triggers array exists before trying to use it
+  return config.truthOrDareModes && 
+         config.truthOrDareModes.triggers && 
+         Array.isArray(config.truthOrDareModes.triggers) &&
+         config.truthOrDareModes.triggers.some(trigger => 
+           message.includes(trigger.toLowerCase())
+         );
 }
 
 /**
@@ -310,7 +314,8 @@ function isTriggerMessage(message) {
 function getGameMode(message) {
   if (message.includes('spicy')) return 'spicy';
   if (message.includes('extreme')) return 'extreme';
-  return config.truthOrDareModes.defaultMode;
+  return config.truthOrDareModes && config.truthOrDareModes.defaultMode ? 
+         config.truthOrDareModes.defaultMode : 'casual';
 }
 
 /**
