@@ -42,11 +42,12 @@ Adapt your responses to match the configured communication style for each specif
   
   // Access control lists
   allowedContacts: [
-    "911234567890"              // Only these numbers can receive responses
+    "911234567890",
+    "919279782054"              // Only these numbers can receive responses
   ],
   
   blockedContacts: [
-    "*"                         // Wildcard to block all other contacts
+    // "*"                      // Wildcard to block all other contacts
   ],
   
   // Game configurations
