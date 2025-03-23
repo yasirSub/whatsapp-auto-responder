@@ -43,7 +43,7 @@ npm install
 allowedContacts: ["911234567890"], // Phone numbers allowed to use the auto-responder
 blockedContacts: ["*"], // Block all other contacts
 specialContacts: {  // Contacts with custom response styles
-  "911234567890": {
+  "xxxxxxxxxxxxx0": {
     style: "explicit",
     name: "Friend", 
     gender: "male" 
